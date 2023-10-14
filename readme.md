@@ -1,2 +1,2 @@
 # Introduction
-This is a simple library to itnerface with the TI tla2528
+This is a simple library to interface with the TI tla2528
