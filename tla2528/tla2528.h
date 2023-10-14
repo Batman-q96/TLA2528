@@ -48,14 +48,24 @@
 //
 //**********************************************************************************
 
+class TLA2528 {
+    public:
+        uint8_t TLA2528_address;
 
+        TLA2528(uint8_t TLA2528_address);
+
+        uint8_t read_from_register(uint8_t reg_addr, bool release_wire = true);
+        void write_to_register(uint8_t reg_addr, uint8_t data, bool release_wire = true);
+
+        uint16_t read_one_channel_data(uint8_t channel_num);
+        // uint16_t* read_all_channel_data();
+};
 
 //**********************************************************************************
 //
 // Device commands
 //
 //**********************************************************************************
-
 
 
 //**********************************************************************************
